@@ -1,0 +1,5 @@
+Silent is the better option. It minimises the cmd window after running the commands and takes less than 3 seconds.
+
+Loud does the same but then also uses "taskkill /f /im “explorer.exe”" to close the desktop and taskbar 
+leaving you with a black screen or your accent colour which by default is blue and whatever apps you had open at that time.
+It then minimises all windows so it cannot be fixed except by alt tabbing or shutting down the computer.
